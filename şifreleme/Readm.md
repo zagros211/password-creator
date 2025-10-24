@@ -21,22 +21,7 @@ Bu küçük Python betiği, kullanıcı tercihleri doğrultusunda güvenli ve ra
 
 1. PowerShell'i açın ve dosyanın bulunduğu klasöre gidin:
 
-```powershell
-cd 'C:\Users\ffkur\OneDrive\Masaüstü\jarvis-project\jarvis\şifreleme'
-```
-
 2. Betiği çalıştırın:
-
-```powershell
-python .\password_creator.py
-```
-
-Not: Eğer sisteminizde `python` komutu farklıysa tam Python yolunu kullanabilirsiniz:
-
-```powershell
-& C:/Users/ffkur/AppData/Local/Programs/Python/Python313/python.exe .\password_creator.py
-```
-
 3. Program sizden etkileşimli olarak girdiler isteyecek. Sırasıyla:
 
 - Şifre uzunluğu (6–16)
@@ -76,13 +61,3 @@ Program, girdilerinize göre şifreleri oluşturup ekrana yazdırır.
 - "Lütfen geçerli bir sayı girin!" hatası: sayı girişi beklenen yere harf/boş/uygun olmayan değer girmişsiniz. Geçerli bir tam sayı girin.
 - "Hata: ... seçili karakter tiplerinde yok!" hatası: başlangıç/bitiş için seçtiğiniz karakter, etkin karakter havuzunda yok. Karakter tiplerinizi kontrol edin.
 - "python: command not found" veya benzeri hatalar: Python sistem PATH'ine eklenmemiş olabilir; tam python yolunu kullanarak çalıştırın veya PATH'e ekleyin.
-
----
-
-Eğer isterseniz bu README'yi İngilizceye çevirebilirim veya betiğe aşağıdaki geliştirmelerden birini ekleyebilirim:
-
-- `secrets` modülüne geçiş (daha güvenli rastgelelik)
-- Non-interactive CLI (argümanlarla çalışan versiyon)
-- Üretilen şifreleri şifreli olarak kaydetme veya panoya kopyalama
-
-Hangi geliştirmeyi tercih ediyorsunuz? 
